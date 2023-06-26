@@ -21,7 +21,7 @@ module.exports = {
             verbose: true // optional
         }),
         new HtmlWebpackPlugin({
-            title: 'node',
+            title: 'openweather',
             template: './src/index.html',
             inject: 'body'
         }),
