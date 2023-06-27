@@ -15,9 +15,32 @@
           cairo
         </pre>
         <form>
-            <label for="location">Enter a location:</label>
-            <input id="location" type="text" name="location">
-            <input type="submit" id="weatherLocation">Get Current Temperature and Humidity</input>
+            <div>
+                <label for="location">
+                    Enter a location: 
+                    <input id="location" type="text" name="location">
+                </label>
+                <label for="zipcode">
+                    Or enter a zipcode:
+                    <input id="zipcode" type="text" name="zipcode">
+                </label>
+            </div>
+            <div>
+                <label for="temp-setting">
+                    <input type="radio" name="temperature" value="K" checked>
+                    Kelvin
+                </label>
+                <label for="temp-setting">
+                    <input type="radio" name="temperature" value="F">
+                    Fahrenheit
+                </label>
+                <label for="temp-setting">
+                    <input type="radio" name="temperature" value="C">
+                    Celsius
+                </label>
+            </div>
+            
+            <input type="submit" value="Get Current Temperature and Humidity">
         </form>
         <p id="showResponse"></p>
     </div>
